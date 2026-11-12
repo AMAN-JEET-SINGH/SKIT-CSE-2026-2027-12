@@ -834,7 +834,7 @@ export default function DashboardHome() {
       <div className="max-w-7xl mx-auto">
 
         {/* Welcome Section */}
-        <div className="py-4 pb-10 pl-2"><h1 className="text-3xl font-semibold text-[#424d4c]">Welcome back, <span className="font-bold text-[#112b29]">{user?.full_name}</span> !</h1></div>
+        <div className="py-4 pb-10 pl-2"><h1 className="dashboard-welcome text-3xl font-semibold text-[#424d4c]">Welcome back, <span className="font-bold text-[#112b29]">{user?.full_name}</span> !</h1></div>
       
         {/* Quick Stats */}
         

@@ -17,6 +17,7 @@ import {
   Trophy,
   Star,
 } from "lucide-react";
+import ThemeToggle from "../components/ThemeToggle";
 import awardSvg from "../assets/award.svg";
 import trophySvg from "../assets/TropyStar.svg";
 import award2Svg from "../assets/Award2.svg";
@@ -110,6 +111,16 @@ export default function Profile() {
 
       {/* Main Content */}
       <main className="p-6 max-w-4xl mx-auto">
+        <section className="mb-6 bg-white rounded-xl shadow-lg p-6 flex items-center justify-between gap-4">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900">Appearance</h3>
+            <p className="text-sm text-gray-500 mt-1">
+              Choose your preferred display theme.
+            </p>
+          </div>
+          <ThemeToggle showLabel />
+        </section>
+
         {/* Profile Card */}
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
           {/* Header Section with Avatar */}
@@ -265,7 +276,7 @@ export default function Profile() {
         </div>
 
         {/* Achievements Card */}
-        <div className="bg-white rounded-xl shadow-lg p-8 mt-6">
+        <div className="profile-achievements bg-white rounded-xl shadow-lg p-8 mt-6">
           <div className="flex items-center justify-between mb-6">
             <h4 className="text-lg font-semibold text-gray-900 flex items-center">
               <Trophy className="w-5 h-5 mr-2 text-teal-600" />
@@ -278,7 +289,7 @@ export default function Profile() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {/* Achievement 1 */}
-            <div className="flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-teal-50 to-blue-50 hover:shadow-md transition-shadow">
+            <div className="achievement-card achievement-card-teal flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-teal-50 to-blue-50 hover:shadow-md transition-shadow">
               <img 
                 src={award2Svg} 
                 alt="Award" 
@@ -293,7 +304,7 @@ export default function Profile() {
             </div>
 
             {/* Achievement 2 */}
-            <div className="flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 hover:shadow-md transition-shadow">
+            <div className="achievement-card achievement-card-amber flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-amber-50 to-orange-50 hover:shadow-md transition-shadow">
               <img 
                 src={awardSvg} 
                 alt="Award" 
@@ -308,7 +319,7 @@ export default function Profile() {
             </div>
 
             {/* Achievement 3 */}
-            <div className="flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 hover:shadow-md transition-shadow">
+            <div className="achievement-card achievement-card-purple flex flex-col items-center text-center p-4 rounded-lg bg-gradient-to-br from-purple-50 to-pink-50 hover:shadow-md transition-shadow">
               <img 
                 src={trophySvg} 
                 alt="Award" 

@@ -11,79 +11,79 @@ body,
 
 [data-theme="dark"] {
   color-scheme: dark;
-  background: #111b19;
-  color: #e5efeb;
+  background: #090a0b;
+  color: #f1f1f1;
 }
 
 [data-theme="dark"] body,
 [data-theme="dark"] #root {
-  background-color: #111b19;
-  color: #e5efeb;
+  background-color: #090a0b;
+  color: #f1f1f1;
 }
 
 [data-theme="dark"] .bg-white {
-  background-color: #192623;
+  background-color: #111315;
 }
 
 [data-theme="dark"] .bg-gray-50 {
-  background-color: #111b19;
+  background-color: #090a0b;
 }
 
 [data-theme="dark"] .bg-gray-100 {
-  background-color: #202e2a;
+  background-color: #191c1f;
 }
 
 [data-theme="dark"] .bg-gray-200 {
-  background-color: #30413c;
+  background-color: #25292d;
 }
 
 [data-theme="dark"] .bg-gray-300 {
-  background-color: #40534d;
+  background-color: #34393e;
 }
 
 [data-theme="dark"] .text-gray-900 {
-  color: #edf5f1;
+  color: #f5f5f5;
 }
 
 [data-theme="dark"] .text-gray-800 {
-  color: #dce8e2;
+  color: #e4e5e6;
 }
 
 [data-theme="dark"] .text-gray-700 {
-  color: #c4d2cb;
+  color: #d0d2d4;
 }
 
 [data-theme="dark"] .text-gray-600 {
-  color: #a9bbb2;
+  color: #b6b9bc;
 }
 
 [data-theme="dark"] .text-gray-500 {
-  color: #8da198;
+  color: #969a9e;
 }
 
 [data-theme="dark"] .text-gray-400 {
-  color: #82958c;
+  color: #858a8e;
 }
 
 [data-theme="dark"] .border-gray-100 {
-  border-color: #263632;
+  border-color: #1d2023;
 }
 
 [data-theme="dark"] .border-gray-200 {
-  border-color: #30413c;
+  border-color: #292d31;
 }
 
 [data-theme="dark"] .border-gray-300 {
-  border-color: #40534d;
+  border-color: #3a3f44;
 }
 
 [data-theme="dark"] .divide-gray-200 > :not(:last-child) {
-  border-color: #30413c;
+  border-color: #292d31;
 }
 
 [data-theme="dark"] .placeholder-gray-400::placeholder,
 [data-theme="dark"] .placeholder-gray-500::placeholder {
-  color: #82958c;
+  color: #858a8e;
 }
 
 [data-theme="dark"] input,
@@ -94,50 +94,50 @@ body,
 
 [data-theme="dark"] input::placeholder,
 [data-theme="dark"] textarea::placeholder {
-  color: #82958c;
+  color: #858a8e;
 }
 
 [data-theme="dark"] [class~="text-[#1A3A37]"],
 [data-theme="dark"] [class~="text-teal-900"] {
-  color: #c5e2d8;
+  color: #d9e8e4;
 }
 
 [data-theme="dark"] [class~="border-[#1A3A37]"] {
-  border-color: #83b9a7;
+  border-color: #7da99f;
 }
 
 [data-theme="dark"] [class~="bg-[#F9E6D0]"] {
-  background-color: #28352f;
+  background-color: #111315;
 }
 
 [data-theme="dark"] [class~="bg-[#00373E]"] {
-  background-color: #172b2c;
+  background-color: #15191b;
 }
 
 [data-theme="dark"] .bg-blue-50,
 [data-theme="dark"] .bg-purple-50 {
-  background-color: #1c2a2a;
+  background-color: #141719;
 }
 
 [data-theme="dark"] .bg-blue-100,
 [data-theme="dark"] .bg-purple-100 {
-  background-color: #263839;
+  background-color: #202427;
 }
 
 [data-theme="dark"] .border-blue-200 {
-  border-color: #395052;
+  border-color: #343c40;
 }
 
 [data-theme="dark"] .text-blue-900,
 [data-theme="dark"] .text-purple-900 {
-  color: #d2e5e3;
+  color: #e0e5e6;
 }
 
 [data-theme="dark"] .text-blue-700,
 [data-theme="dark"] .text-purple-700,
 [data-theme="dark"] .text-blue-600,
 [data-theme="dark"] .text-purple-600 {
-  color: #a9d0c8;
+  color: #b8d2ce;
 }
 
 .theme-toggle {
@@ -181,14 +181,14 @@ body,
 }
 
 [data-theme="dark"] .theme-toggle {
-  border-color: #344640;
-  background: #202e2a;
-  color: #d4e2dc;
+  border-color: #34383c;
+  background: #191c1f;
+  color: #eeeeee;
 }
 
 [data-theme="dark"] .theme-toggle:hover,
 [data-theme="dark"] .theme-toggle-compact:hover {
-  background: #2a3b35;
+  background: #25292d;
 }
 
 [data-theme="dark"] .theme-toggle-compact {
@@ -196,7 +196,115 @@ body,
 }
 
 [data-theme="dark"] .hover\:bg-gray-50:hover {
-  background-color: #202e2a;
+  background-color: #191c1f;
+}
+
+[data-theme="dark"] .dashboard-sidebar {
+  background-color: #101214;
+  border-right: 1px solid #25292d;
+}
+
+[data-theme="dark"] .dashboard-sidebar nav a {
+  color: #c6cbce;
+}
+
+[data-theme="dark"] .dashboard-sidebar nav a:hover {
+  background-color: #1d2225;
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] .dashboard-sidebar nav a[aria-current="page"] {
+  background-color: #28564e;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .dashboard-sidebar nav a[aria-current="page"]:hover {
+  background-color: #31665c;
+}
+
+[data-theme="dark"] .dashboard-sidebar a:hover {
+  background-color: #191c1f;
+}
+
+[data-theme="dark"] .dashboard-sidebar .user-welcome {
+  color: #b7c0c4;
+}
+
+[data-theme="dark"] .dashboard-welcome {
+  color: #d3d8da;
+}
+
+[data-theme="dark"] .dashboard-welcome span {
+  color: #8fd6c0;
+}
+
+[data-theme="dark"] .privacy-mode-card {
+  background-image: none;
+  background-color: #141719;
+  border-color: #30363a;
+}
+
+[data-theme="dark"] .privacy-mode-card .text-green-600 {
+  color: #80d0ad;
+}
+
+[data-theme="dark"] .privacy-mode-card .text-blue-600 {
+  color: #8abce2;
+}
+
+[data-theme="dark"] .privacy-mode-card .text-purple-600 {
+  color: #c1a0e8;
+}
+
+[data-theme="dark"] .privacy-mode-card .privacy-mode-switch[class~="bg-green-500"] {
+  background-color: #347b62;
+}
+
+[data-theme="dark"] .privacy-mode-card .privacy-mode-switch[class~="bg-blue-500"] {
+  background-color: #3c719b;
+}
+
+[data-theme="dark"] .privacy-mode-card .privacy-mode-switch[class~="bg-purple-600"] {
+  background-color: #7553a0;
+}
+
+[data-theme="dark"] .privacy-mode-card .privacy-mode-status[class~="bg-blue-200"] {
+  background-color: #26445a;
+  color: #c5e5fb;
+}
+
+[data-theme="dark"] .privacy-mode-card .privacy-mode-status[class~="bg-purple-200"] {
+  background-color: #483563;
+  color: #e4d3fa;
+}
+
+[data-theme="dark"] .achievement-card {
+  background-image: none;
+  border: 1px solid #30363a;
+}
+
+[data-theme="dark"] .achievement-card-teal {
+  background-color: #14201e;
+}
+
+[data-theme="dark"] .achievement-card-amber {
+  background-color: #211b13;
+}
+
+[data-theme="dark"] .achievement-card-purple {
+  background-color: #1d1724;
+}
+
+[data-theme="dark"] .achievement-card h5 {
+  color: #f0f2f3;
+}
+
+[data-theme="dark"] .achievement-card p {
+  color: #b7bdc1;
+}
+
+[data-theme="dark"] .profile-achievements h4 {
+  color: #f5f5f5;
 }
 
 /* Additional canvas constraints for Rive pages */
