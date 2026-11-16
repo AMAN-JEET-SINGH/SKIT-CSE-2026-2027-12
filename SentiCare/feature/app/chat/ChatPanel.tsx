@@ -533,28 +533,3 @@ export default function ChatPanel() {
     </main>
   );
 }
-export default function ChatPanel() {
-  const [messages, setMessages] =
-    useState<Message[]>(INITIAL_MESSAGES);
-  const [input, setInput] = useState("");
-  const [search, setSearch] = useState("");
-  const [showSearch, setShowSearch] = useState(false);
-  const [showQuickReplies, setShowQuickReplies] = useState(true);
-  const [isTyping, setIsTyping] = useState(false);
-  const [connectionState, setConnectionState] = useState<
-    "demo" | "connected" | "disconnected"
-  >("demo");
-  const [notice, setNotice] = useState("");
-
-  const bottomRef = useRef<HTMLDivElement>(null);
-  const inputRef = useRef<HTMLTextAreaElement>(null);
-
-  const filteredMessages = useMemo(() => {
-    const query = search.trim().toLowerCase();
-
-    if (!query) return messages;
-
-    return messages.filter((item) =>
-      item.text.toLowerCase().includes(query)
-    );
-  }, [messages, search]);
