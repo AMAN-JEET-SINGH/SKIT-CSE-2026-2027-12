@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink, Outlet, Link } from "react-router-dom";
 import { useAuth } from "../contexts/AuthContext";
-import ThemeToggle from "./ThemeToggle";
 
 export default function DashboardLayout() {
   const { user, logout } = useAuth();
@@ -20,7 +19,7 @@ export default function DashboardLayout() {
   return (
     <div className="h-screen bg-gray-50 flex overflow-hidden">
       {/* Left Sidebar - Fixed */}
-      <div className="w-64 bg-white shadow-lg flex flex-col h-full">
+      <div className="dashboard-sidebar w-64 bg-white shadow-lg flex flex-col h-full">
         {/* Company Name/Logo */}
         <NavLink
           to="/dashboard"
@@ -167,7 +166,6 @@ export default function DashboardLayout() {
 
         {/* User Info at Bottom */}
         <div className="border-t border-gray-200 p-4 flex-shrink-0">
-          <ThemeToggle />
           <div className="flex items-center justify-between">
             <div className="flex items-center flex-1 min-w-0">
               <div className="w-8 h-8 bg-[#1A3A37] rounded-full flex items-center justify-center flex-shrink-0">

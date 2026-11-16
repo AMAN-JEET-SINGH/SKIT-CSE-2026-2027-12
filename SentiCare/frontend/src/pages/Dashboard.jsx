@@ -5,7 +5,7 @@ export default function Dashboard() {
   return (
     <div className="min-h-screen bg-gray-50 flex">
       {/* Left Sidebar - Sticky */}
-      <div className="w-64 bg-white shadow-lg sticky top-0 h-screen flex flex-col">
+      <div className="dashboard-sidebar w-64 bg-white shadow-lg sticky top-0 h-screen flex flex-col">
         {/* Company Name/Logo */}
         <NavLink
           to="/dashboard"
@@ -158,7 +158,7 @@ export default function Dashboard() {
             </div>
             <div className="ml-3">
               <p className="text-sm font-medium text-gray-900">User</p>
-              <p className="text-xs text-gray-500">Welcome back!</p>
+              <p className="user-welcome text-xs text-gray-500">Welcome back!</p>
             </div>
           </div>
         </div>

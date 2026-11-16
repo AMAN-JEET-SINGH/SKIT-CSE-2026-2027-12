@@ -120,3 +120,31 @@ export default function ChatPage() {
     const text = message.trim();
 
     if (!text) return;
+
+    import ChatSessionList, {
+  ChatSession,
+} from "./ChatSessionList";
+
+const sessions: ChatSession[] = [
+  {
+    id: "1",
+    title: "Daily Wellness Check",
+    lastMessage: "I am feeling better today.",
+    updatedAt: "Today",
+    unread: 1,
+  },
+  {
+    id: "2",
+    title: "Stress Management",
+    lastMessage: "Try breathing exercises.",
+    updatedAt: "Yesterday",
+  },
+];
+
+<ChatSessionList
+  sessions={sessions}
+  activeSessionId="1"
+  onSelect={(session) => console.log(session)}
+  onCreate={() => console.log("Create new chat")}
+  onDelete={(id) => console.log("Delete:", id)}
+/>
